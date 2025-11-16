@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Oven'n Cravings — Freshly baked. Perfectly craved.</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">
+        <!-- Simple elegant SVG logo -->
+        <svg width="160" height="48" viewBox="0 0 320 96" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="320" height="96" rx="14" fill="#F8F1EA" />
+          <text x="24" y="64" fill="#6B3F2B" font-family="'Playfair Display', serif" font-size="36">Oven’n</text>
+          <text x="164" y="64" fill="#B8863B" font-family="'Inter', sans-serif" font-size="28" font-weight="600">Cravings</text>
+        </svg>
+      </a>
+      <nav class="nav">
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#testimonials">Testimonials</a>
+        <a class="btn-whatsapp" id="header-whatsapp" href="#">WhatsApp</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1>Freshly baked. Perfectly craved.</h1>
+          <p class="lead">Artisan pastries, cakes, breads and more — baked fresh daily and crafted with love.</p>
+          <div class="hero-ctas">
+            <a class="btn primary" href="#products">Browse Menu</a>
+            <a class="btn outline" id="hero-whatsapp" href="#">Order on WhatsApp</a>
+          </div>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <!-- decorative image pulled from Unsplash for demo -->
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=0e6b66b12fa9f8b13fcd0fef92a1f5d4" alt="Assortment of pastries and baked goods">
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="section container">
+      <h2 class="section-title">Our Categories</h2>
+      <p class="section-sub">Delicious options for every craving — available for pickup and delivery.</p>
+
+      <div class="grid products-grid">
+        <!-- Product card template -->
+        <article class="card product" data-name="Cakes">
+          <img src="cake.webp" alt="Selection of cakes">
+          <div class="card-body">
+            <h3>Cakes</h3>
+            <p>Birthday, celebration or custom-designed cakes — exquisitely decorated and delicious.</p>
+            <div class="card-actions">
+              <a class="btn small whatsapp-order" data-item="Cakes">Order on WhatsApp</a>
+              <a class="link" href="#">See options</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card product" data-name="Pastries">
+          <img src="pastries.webp" alt="Fresh pastries">
+          <div class="card-body">
+            <h3>Pastries</h3>
+            <p>Flaky croissants, danishes and morning delights — baked fresh every day.</p>
+            <div class="card-actions">
+              <a class="btn small whatsapp-order" data-item="Pastries">Order on WhatsApp</a>
+              <a class="link" href="#">See options</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card product" data-name="Bread">
+          <img src="bread.webp" alt="Freshly baked bread loaves">
+          <div class="card-body">
+            <h3>Bread</h3>
+            <p>Hearty sourdoughs, sandwich loaves and artisanal breads baked to golden perfection.</p>
+            <div class="card-actions">
+              <a class="btn small whatsapp-order" data-item="Bread">Order on WhatsApp</a>
+              <a class="link" href="#">See options</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card product" data-name="Cookies">
+          <img src="cookies.webp" alt="Assorted cookies">
+          <div class="card-body">
+            <h3>Cookies</h3>
+            <p>Chewy, crisp, and packed with flavor — perfect for treats and gifts.</p>
+            <div class="card-actions">
+              <a class="btn small whatsapp-order" data-item="Cookies">Order on WhatsApp</a>
+              <a class="link" href="#">See options</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card product" data-name="Doughnuts">
+          <img src="donuts.webp" alt="Glazed doughnuts">
+          <div class="card-body">
+            <h3>Doughnuts</h3>
+            <p>Soft, pillowy doughnuts with decadent glazes and toppings.</p>
+            <div class="card-actions">
+              <a class="btn small whatsapp-order" data-item="Doughnuts">Order on WhatsApp</a>
+              <a class="link" href="#">See options</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card product" data-name="Small Chops">
+          <img src="small chops.webp" alt="Small chops and savory bites">
+          <div class="card-body">
+            <h3>Small Chops</h3>
+            <p>Golden meat pies and savory bites — perfect for events and gatherings.</p>
+            <div class="card-actions">
+              <a class="btn small whatsapp-order" data-item="Small Chops">Order on WhatsApp</a>
+              <a class="link" href="#">See options</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="custom-cake">
+        <h3>Custom Cakes</h3>
+        <p>Design your dream cake for birthdays, weddings, and special events.</p>
+        <a class="btn" id="custom-cake-order">Order a Custom Cake on WhatsApp</a>
+      </div>
+    </section>
+
+    <section id="about" class="section container about">
+      <h2 class="section-title">About Oven’n Cravings</h2>
+      <div class="about-grid">
+        <div>
+          <h3>Our Mission</h3>
+          <p>To create warm, handcrafted baked goods that bring joy to every table. We combine traditional techniques with creative flavors to delight our customers daily.</p>
+        </div>
+        <div>
+          <h3>Freshness & Quality</h3>
+          <p>Everything is baked fresh every morning using premium ingredients. Our team takes pride in consistent, beautiful presentation and unbeatable flavor.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section container">
+      <h2 class="section-title">Testimonials</h2>
+      <div class="carousel" aria-live="polite">
+        <div class="carousel-track" id="testimonialTrack">
+          <blockquote class="testimonial">
+            <p>"Best birthday cake ever — moist, beautifully decorated and everyone asked where it was from."</p>
+            <cite>— Yemi A.</cite>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>"Their pastries are my morning comfort — flaky and fresh every time."</p>
+            <cite>— Clara M.</cite>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>"Reliable catering for our event. The small chops were a hit and looked gorgeous."</p>
+            <cite>— Eventify Ltd.</cite>
+          </blockquote>
+        </div>
+        <div class="carousel-controls">
+          <button id="prevTestimonial">‹</button>
+          <button id="nextTestimonial">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container contact">
+      <h2 class="section-title">Contact & Orders</h2>
+      <div class="contact-grid">
+        <div>
+          <h3>Reach Us</h3>
+          <p>Quick orders via WhatsApp. Replace the placeholder phone in `README.md` with your business number to direct messages to you.</p>
+          <p><strong>Pickup & Delivery:</strong> Pickup available daily from 7am — 7pm. Delivery within town; larger deliveries available by arrangement.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn whatsapp-large" id="contact-whatsapp">Message on WhatsApp</a>
+          <p class="muted">Or email us at <a href="mailto:hello@ovenncravings.example">hello@ovenncravings.example</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <strong>Oven’n Cravings</strong> — Freshly baked. Perfectly craved.</p>
+      <p class="muted">Made with care • Replace WhatsApp phone placeholder in `README.md`</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <div class="mobile-order-bar">
+    <a id="mobile-whatsapp" class="btn whatsapp-large">Order on WhatsApp</a>
+  </div>
+</body>
+</html>
